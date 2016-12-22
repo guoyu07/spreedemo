@@ -1,0 +1,23 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: iopenauto_development
+  username: root
+  password: 'mysql'
+
+test:
+  <<: *default
+  database: iopenauto_test
+  username: root
+  password: 'mysql'
+
+production:
+  <<: *default
+  database: iopenauto_production
+  username: root
+  password: 'mysql'

@@ -1,0 +1,5 @@
+= Spree demo project doc
+
+== Description
+
+This is an e-commerce demo site using spree.
